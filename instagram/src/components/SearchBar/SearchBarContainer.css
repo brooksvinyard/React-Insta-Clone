@@ -6,29 +6,51 @@
     flex-direction: row;
     justify-content: space-between;
     /* background: #ffffff; */
+    align-items: center;
 }
 
 .logos {
     height: 50px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
 }
 
 .camera-image {
     width: 50px;
     padding: 20px;
-    border-right: 1px solid black;
 }
 
 .logo-image {
     height: 50px;
+    border-left: 1px solid #3333;
+    padding-left: 10px;
 }
 
 .social-container {
     display: flex;
     /* width: 500px; */
     height: 100%;
+    align-items: center;
+    margin-right: 20px;
 }
 
 .social {
     width: 20px;
     height: 20px;
+    font-size: 27px;
+    padding: 10px;
+}
+
+
+
+
+.search-bar-container input{
+    margin: 10px 3%;
+    width: 35%;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
 }

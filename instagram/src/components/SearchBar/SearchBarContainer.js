@@ -11,7 +11,7 @@ function SearchBarContainer(props) {
                 <img alt="instagram logo" src={igLogo} className="logo-image" />
             </div>
             
-            <input type="text" placeholder="🔍 Search" />
+            <input type="text" placeholder="🔍 Search" onKeyDown={props.searchPosts} />
 
             <div className="social-container">
                 <div className="social">
