@@ -5,7 +5,7 @@ const LikeSection = props => {
     <div className="like-section">
 
         <div className="like-icons">
-            <i className="fa fa-heart" />
+            <i onClick={props.likePost}className="fa fa-heart" />
             <i className="fa fa-comment" />
         </div>
 
