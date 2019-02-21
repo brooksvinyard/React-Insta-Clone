@@ -1,13 +1,12 @@
-import React from 'react';
 import styled from 'styled-components'
+import React from 'react';
 
 // Styled with Styled-Components
 const Form = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
-`
-
+`;
 const Button = styled.button`
     margin: 10px 3%;
     width: 35%;
@@ -19,8 +18,7 @@ const Button = styled.button`
     :hover {
         background-color: #d3d3d3;
     }
-`
-
+`;
 const Input = styled.input`
     margin: 10px 3%;
     width: 35%;
@@ -28,7 +26,7 @@ const Input = styled.input`
     font-size: 15px;
     border-radius: 5px;
     text-align: center;
-`
+`;
 
 
 class Login extends React.Component {

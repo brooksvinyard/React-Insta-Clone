@@ -1,6 +1,6 @@
 import React from 'react';
 import PostsPage from './components/PostContainer/PostsPage';
-import './App.css';
+// import './App.css';
 import authenticate from './authentication/authenticate';
 import Login from './components/Login/Login'
 

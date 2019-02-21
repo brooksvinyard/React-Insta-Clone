@@ -1,17 +1,38 @@
+import styled from 'styled-components'
 import React from 'react';
+
+// Styled with Styled-Components
+const LikeWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    padding: 2px;
+`;
+const LikeIconWrapper = styled.div`
+    font-size: 27px;
+`;
+const LikeMe = styled.i`
+    display: inline-block;
+    height: 35px;
+    width: 51px;
+    margin: 0px;
+`;
+const Likes = styled.div`
+    font-weight: 500;
+`;
 
 const LikeSection = props => {
   return (
-    <div className="like-section">
+    <LikeWrapper>
 
-        <div className="like-icons">
-            <i onClick={props.likePost}className="fa fa-heart" />
-            <i className="fa fa-comment" />
-        </div>
+        <LikeIconWrapper>
+            <LikeMe onClick={props.likePost} className="fa fa-heart" />
+            <LikeMe className="fa fa-comment" />
+        </LikeIconWrapper>
 
-        <div className="likes">{props.likes} Likes</div>
+        <Likes>{props.likes} Likes</Likes>
         
-    </div>
+    </LikeWrapper>
   );
 };
 
